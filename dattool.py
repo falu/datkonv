@@ -10,6 +10,7 @@ A modul a GNU GPL 3 feltételei szerint terjeszthető.
 objcs= { "AA":[ ("alappont_id","N",5), ("obj_fels","AN",4), ("pont_szam","AN",20), ("pont_id","N",8), ("vizsz_alland1","N",2), ("pontvedo","N",2), ("vizsz_alland2","N",2), ("v_mag2","N",8), ("vizsz_alland3","N",2), ("v_mag3","N",8), ("meghat_mod","N",2), ("szemely_id","N",8), ("all_datum","D",0), ("elozo_alappont_id","N",5), ("blokk_file","AN",12), ("megsz_datum","D",0), ("tar_hely","AN",50), ("digit_hely","AN",50), ("jelkulcs","N",3), ("munkater_id","N",6)],
          "AB":[ ("malapp_id","N",5), ("obj_fels","AN",4), ("mpont_szam","AN",20), ("pont_id","N",8), ("mag_alland","N",2), ("mag_allandfa","N",2), ("mag","N",8), ("meghat_mod","N",2), ("szemely_id","N",8), ("all_datum","D",0), ("elozo_malapp_id","N",5), ("blokk_file","AN",12), ("megsz_datum","D",0), ("tar_hely","AN",50), ("digit_hely","AN",50), ("jelkulcs","N",3), ("munkater_id","N",6)],
          "AC":[ ("rpont_id","N",6), ("obj_fels","AN",4), ("pont_szam","AN",20), ("pont_id","N",8), ("vizsz_alland","N",2), ("meghat_mod","N",2), ("meghat_datum","D",0), ("elozo_rpont_id","N",6), ("megsz_datum","D",0), ("jelkulcs","N",3), ("munkater_id","N",6)],
+         "AD":[ ("cimkoord_id","N",10), ("obj_fels","AN",4), ("pont_szam","AN",20), ("pontkod","AN",20), ("pont_id","N",8), ("megsz_datum","AN",8), ("jelkulcs","N",3), ("leiras","AN",200), ("parcel_id1","N",10), ("parcel_id2","N",10), ("ep_id","N",10), ("eoi_id","N",10), ("elozo_cimkoord_id","N",10), ("munkater_id","N",10)],
          "BA":[ ("kozig_idba","N",5), ("obj_fels","AN",4), ("felulet_id","N",8), ("kozig_id","N",4), ("kozig_kp","N",4), ("ceg_id","N",6), ("elhat_jell","N",1), ("elhat_mod","N",1), ("nemz_nev1","AN",20), ("nemz_nev2","AN",20), ("elozo_kozig_idba","N",5), ("kep_file","AN",24), ("megsz_datum","D",0), ("jelkulcs","N",3), ("munkater_id","N",6), ("pont_id","N",8)],
          "BB":[ ("kozigal_id","N",6), ("obj_fels","AN",4), ("felulet_id","N",8), ("kozigal_nev","AN",20), ("kozid_id","N",4), ("l_datum","D",0), ("hatarozat","AN",20), ("elhat_jell","N",1), ("elhat_mod","N",1), ("elozo_kozigal_id","N",6), ("kep_file","AN",24), ("megsz_datum","D",0), ("jelkulcs","N",3), ("munkater_id","N",6), ("pont_id","N",8)],
          "BC":[ ("parcel_id","N",8), ("obj_fels","AN",4), ("felulet_id","N",8), ("helyr_szam","AN",10), ("cim_id","N",8), ("fekves","N",1), ("kozter_jell","N",2), ("terulet","N",8), ("foldert","N",5), ("forg_ertek","N",6), ("szerv_tip","N",2), ("jogi_jelleg","N",3), ("jogallas","N",2), ("ceg_id","N",6), ("elhat_jell","N",1), ("elhat_mod","N",1), ("elozo_parcel_id","N",8), ("l_datum","D",0), ("hatarozat","AN",20), ("valt_jell","AN",20), ("tar_hely","AN",20), ("blokk_file","AN",12), ("megsz_datum","D",0), ("jelkulcs","N",3), ("munkater_id","N",6), ("pont_id","N",8)],
@@ -42,7 +43,7 @@ objcs= { "AA":[ ("alappont_id","N",5), ("obj_fels","AN",4), ("pont_szam","AN",20
 
 objcskodl=list(objcs.keys())
 
-objgeom={'AA':('P',3), 'AB':('P',3), 'AC':('P',3),
+objgeom={'AA':('P',3), 'AB':('P',3), 'AC':('P',3), , 'AD':('P',3),
          'BA':('F',3), 'BB':('F',3), 'BC':('F',3), 'BD':('F',3), 'BE':('F',3), 'BF':('F',3), 'BG':('F',3),
          'CA':('F',3), 'CB':('X',3,4), 'CC':('F', 3), 'CD':('X',3,4), 'CE':('X',3,4),
          'DA':('P',3), 'DB':('F',3), 'DC':('F',3), 'DD':('X',3,4), 'DE':('F',3), 'DF':('X',3,4), 'DG':('X',3,4),
